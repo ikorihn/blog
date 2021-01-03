@@ -14,6 +14,8 @@ module.exports = {
     defaultImage: "images/bg.jpeg",
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,8 +55,6 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-autolink-headers`,
-          `gatsby-plugin-emotion`,
-          `gatsby-plugin-smoothscroll`,
         ],
       },
     },
