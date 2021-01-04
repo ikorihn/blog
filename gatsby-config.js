@@ -1,12 +1,12 @@
 module.exports = {
   pathPrefix: "/nikorih-blog",
   siteMetadata: {
-    title: `nikorih`,
+    title: `Nikorih Blog`,
     author: {
       name: `@r57ty7`,
-      summary: `web dev`,
+      summary: `Web系エンジニアときどきランナー`,
     },
-    description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
+    description: `技術メモを中心に書いていく予定。ある程度まとまったテーマがあったらQiitaとかZennに書くかも`,
     siteUrl: `https://r57ty7.github.io/nikorih-blog`,
     social: {
       twitter: `r57ty7`,
@@ -76,7 +76,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
