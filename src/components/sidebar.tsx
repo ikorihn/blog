@@ -1,15 +1,19 @@
-import React from "react";
+import React from 'react'
 
-const Sidebar = ({ header }) => {
-  console.log({ header });
+type Props = {
+  header: string
+}
+
+const Sidebar: React.FC<Props> = ({ header }) => {
+  console.log({ header })
   return (
     <div
       className="md:h-screen p-4 cover-content"
-      style={{ backgroundColor: "var(--lightBg)" }}
+      style={{ backgroundColor: 'var(--lightBg)' }}
     >
       {header}
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar

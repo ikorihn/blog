@@ -1,21 +1,36 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql, PageProps } from 'gatsby'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import ToC from "../components/toc"
-import { rhythm, scale } from "../utils/typography"
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import ToC from '../components/toc'
+import { rhythm, scale } from '../utils/typography'
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate: React.FC<PageProps<
+  GatsbyTypes.BlogPostBySlugQuery,
+  GatsbyTypes.MarkdownRemarkEdge
+>> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   // const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  if (
+    !post ||
+    !post.frontmatter ||
+    !previous ||
+    !previous.frontmatter ||
+    !previous.fields ||
+    !next ||
+    !next.frontmatter ||
+    !next.fields
+  ) {
+    return <div></div>
+  }
 
   return (
     <Layout location={location} title="Home">
       <SEO
-        title={post.frontmatter.title}
+        title={post.frontmatter.title || ''}
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
@@ -38,7 +53,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
           <ToC headings={post.headings} />
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: post.html || '' }} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -61,7 +76,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug || ''} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}

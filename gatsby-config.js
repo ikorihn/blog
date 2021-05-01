@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: "/nikorih-blog",
+  pathPrefix: "/ikorihn-blog",
   siteMetadata: {
-    title: `Nikorih Blog`,
+    title: `ikorihn Blog`,
     author: {
       name: `@r57ty7`,
       summary: `Web系エンジニアときどきランナー`,

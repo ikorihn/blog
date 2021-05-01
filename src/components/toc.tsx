@@ -1,20 +1,33 @@
-import styled from "@emotion/styled"
-import React from "react"
-import tw from "twin.macro"
+import styled from '@emotion/styled'
+import React from 'react'
+import tw from 'twin.macro'
 
-const ToC = ({ headings }) => (
+type Props = {
+  headings: GatsbyTypes.Maybe<
+    ReadonlyArray<
+      GatsbyTypes.Maybe<Pick<GatsbyTypes.MarkdownHeading, 'value' | 'depth'>>
+    >
+  >
+}
+
+const ToC: React.FC<Props> = ({ headings }) => (
   <Toc>
     <Title>Table of contents</Title>
     <InnerScroll>
-      {headings.map(heading => {
-        if (heading.depth > 4) {
+      {headings?.map(heading => {
+        if (
+          !heading ||
+          heading.depth === undefined ||
+          heading.depth > 4 ||
+          !heading.value
+        ) {
           return <div />
         }
 
         return (
           <ToCElement key={heading.value}>
             <ToCLink
-              href={`#${heading.value.replace(/\s+/g, "-").toLowerCase()}`}
+              href={`#${heading.value.replace(/\s+/g, '-').toLowerCase()}`}
             >
               {heading.value}
             </ToCLink>
