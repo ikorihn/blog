@@ -1,9 +1,9 @@
 // Gatsby supports TypeScript natively!
-import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import React from 'react'
+import { PageProps, Link, graphql } from 'gatsby'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { rhythm } from '../utils/typography'
 
 type PageContext = {
   currentPage: number
@@ -32,43 +32,45 @@ type Data = {
   }
 }
 
-const BlogIndex = ({
-  data,
-  location,
-  pageContext,
-}: PageProps<Data, PageContext>) => {
-  const siteTitle = data.site.siteMetadata.title
+const BlogIndex: React.FC<PageProps<
+  GatsbyTypes.blogPageQueryQuery,
+  GatsbyTypes.SitePageContext
+>> = ({ data, location, pageContext }) => {
+  const siteTitle = data.site!.siteMetadata!.title
   const posts = data.allMarkdownRemark.edges
   const { currentPage, numPages } = pageContext
+  if (!siteTitle || !currentPage || !numPages) {
+    return <div></div>
+  }
 
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
-  const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
+  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
+        const title = node.frontmatter?.title || node.fields?.slug || ''
         return (
-          <article key={node.fields.slug}>
+          <article key={node.fields!.slug!}>
             <header>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: `none` }} to={node.fields!.slug!}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{node.frontmatter!.date!}</small>
             </header>
             <section>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: node.frontmatter!.description || node.excerpt || '',
                 }}
               />
             </section>

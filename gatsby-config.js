@@ -1,19 +1,21 @@
 module.exports = {
-  pathPrefix: "/leonids",
+  pathPrefix: "/ikorihn-blog",
   siteMetadata: {
-    title: `Leonids`,
+    title: `ikorihn Blog`,
     author: {
-      name: `@ry_zou`,
-      summary: `web dev`,
+      name: `@r57ty7`,
+      summary: `Web系エンジニアときどきランナー`,
     },
-    description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
-    siteUrl: `https://renyuanz.github.io/leonids`,
+    description: `技術メモを中心に書いていく予定。ある程度まとまったテーマがあったらQiitaとかZennに書くかも`,
+    siteUrl: `https://r57ty7.github.io/nikorih-blog`,
     social: {
-      twitter: `ry_zou`,
+      twitter: `r57ty7`,
     },
     defaultImage: "images/bg.jpeg",
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -44,9 +46,15 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: true,
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-autolink-headers`,
         ],
       },
     },
@@ -62,13 +70,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ryz`,
-        short_name: `Ryz`,
+        name: `nikorih`,
+        short_name: `nikorih`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -83,5 +91,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     "gatsby-plugin-dark-mode",
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-typegen`,
   ],
 }
