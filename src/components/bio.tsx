@@ -7,7 +7,7 @@
 
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import { rhythm } from '../utils/typography'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,9 +21,7 @@ const Bio: React.FC = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
         childImageSharp {
-          fixed(width: 80, height: 80) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 50, height: 50, layout: FIXED)
         }
       }
       site {
@@ -41,7 +39,10 @@ const Bio: React.FC = () => {
     }
   `)
 
-  if (!data.site?.siteMetadata || !data.avatar?.childImageSharp?.fixed) {
+  if (
+    !data.site?.siteMetadata ||
+    !data.avatar?.childImageSharp?.gatsbyImageData
+  ) {
     return <div />
   }
 
@@ -57,9 +58,9 @@ const Bio: React.FC = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
+      <GatsbyImage
+        image={data.avatar.childImageSharp.gatsbyImageData}
+        alt={author.name || ''}
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
