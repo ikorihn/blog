@@ -14,24 +14,15 @@ const BlogPostTemplate: React.FC<PageProps<
   const post = data.markdownRemark
   // const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
-  if (
-    !post ||
-    !post.frontmatter ||
-    !previous ||
-    !previous.frontmatter ||
-    !previous.fields ||
-    !next ||
-    !next.frontmatter ||
-    !next.fields
-  ) {
+  if (!post) {
     return <div></div>
   }
 
   return (
-    <Layout location={location} title="Home">
+    <Layout title="Home">
       <SEO
-        title={post.frontmatter.title || ''}
-        description={post.frontmatter.description || post.excerpt}
+        title={post.frontmatter?.title || ''}
+        description={post.frontmatter?.description || post.excerpt}
       />
       <article>
         <header>
@@ -40,7 +31,7 @@ const BlogPostTemplate: React.FC<PageProps<
               marginBottom: 0,
             }}
           >
-            {post.frontmatter.title}
+            {post.frontmatter?.title}
           </h1>
           <p
             style={{
@@ -49,7 +40,7 @@ const BlogPostTemplate: React.FC<PageProps<
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {post.frontmatter?.date}
           </p>
           <ToC headings={post.headings} />
         </header>
@@ -76,15 +67,15 @@ const BlogPostTemplate: React.FC<PageProps<
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug || ''} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={previous.fields?.slug || ''} rel="prev">
+                ← {previous.frontmatter?.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link to={next.fields?.slug || ''} rel="next">
+                {next.frontmatter?.title} →
               </Link>
             )}
           </li>
