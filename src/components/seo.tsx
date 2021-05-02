@@ -12,7 +12,7 @@ import { useStaticQuery, graphql, PageProps } from 'gatsby'
 type Props = {
   description?: string
   lang?: string
-  meta: (
+  meta?: (
     | {
         name: string
         content: any

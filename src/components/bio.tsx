@@ -12,7 +12,7 @@ import Image from 'gatsby-image'
 import { rhythm } from '../utils/typography'
 
 const Bio: React.FC = () => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<GatsbyTypes.BioQueryQuery>(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
         childImageSharp {
