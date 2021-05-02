@@ -1,4 +1,4 @@
-import path from 'path'
+import * as path from 'path'
 import { GatsbyNode, Actions } from 'gatsby'
 import { createFilePath } from 'gatsby-source-filesystem'
 
@@ -6,10 +6,10 @@ export const createPages: GatsbyNode['createPages'] = async ({
   graphql,
   actions,
   reporter,
-}) => {
+}): Promise<void> => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.ts`)
+  const blogPost = path.resolve(`./src/templates/blog-post.tsx`)
   const result = await graphql<{
     allMarkdownRemark: GatsbyTypes.MarkdownRemarkConnection
   }>(
@@ -39,11 +39,18 @@ export const createPages: GatsbyNode['createPages'] = async ({
   }
 
   // Create blog posts pages.
+  if (result.data == undefined) {
+    return
+  }
   const posts = result.data.allMarkdownRemark.edges
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
+
+    if (!post.node || !post.node.fields || !post.node.fields.slug) {
+      return
+    }
 
     createPage({
       path: post.node.fields.slug,

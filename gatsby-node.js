@@ -13,4 +13,3 @@ const { createPages, onCreateNode } = require('./src/gatsby-node/index')
 
 exports.createPages = createPages
 exports.onCreateNode = onCreateNode
-exports.createSchemaCustomization = createSchemaCustomization
