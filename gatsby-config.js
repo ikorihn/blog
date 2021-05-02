@@ -3,13 +3,14 @@ module.exports = {
   siteMetadata: {
     title: `ikorihn Blog`,
     author: {
-      name: `@r57ty7`,
-      summary: `Web系エンジニアときどきランナー`,
+      name: 'ikorihn',
+      summary: `Web系エンジニア`,
     },
     description: `技術メモを中心に書いていく予定。ある程度まとまったテーマがあったらQiitaとかZennに書くかも`,
     siteUrl: `https://r57ty7.github.io/nikorih-blog`,
     social: {
       twitter: `r57ty7`,
+      github: `r57ty7`,
     },
     defaultImage: "images/bg.jpeg",
   },

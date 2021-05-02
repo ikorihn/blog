@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link, PageProps } from 'gatsby'
+import { Link } from 'gatsby'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { scale } from '../utils/typography'
 
+import Bio from './bio'
 import Footer from './footer'
 import './global.css'
 
@@ -105,6 +106,7 @@ const Layout: React.FC<Props> = ({ title, children }) => {
           style={{ minHeight: 200 }}
         >
           {header}
+          <Bio />
         </div>
       </div>
 
