@@ -5,6 +5,12 @@ description: "Gatsby.jsでブログを作る"
 tags: ["Gatsbyjs", "Netlify"]
 ---
 
+## Table of Contents
+
+```toc
+# This code block gets replaced with the TOC
+```
+
 ## Gatsby.js
 
 Reactでつくられた静的サイトジェネレータ
