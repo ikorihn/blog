@@ -3,7 +3,6 @@ import { Link, graphql, PageProps } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ToC from '../components/toc'
 import { rhythm, scale } from '../utils/typography'
 
 const BlogPostTemplate: React.FC<PageProps<
@@ -41,7 +40,6 @@ const BlogPostTemplate: React.FC<PageProps<
           >
             {post.frontmatter?.date}
           </p>
-          <ToC headings={post.headings} />
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html || '' }} />
         <hr
