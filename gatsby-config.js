@@ -1,17 +1,18 @@
 module.exports = {
-  pathPrefix: "/ikorihn-blog",
+  pathPrefix: '/ikorihn-blog',
   siteMetadata: {
     title: `ikorihn Blog`,
     author: {
-      name: `@r57ty7`,
-      summary: `Web系エンジニアときどきランナー`,
+      name: 'ikorihn',
+      summary: `Web系エンジニア`,
     },
     description: `技術メモを中心に書いていく予定。ある程度まとまったテーマがあったらQiitaとかZennに書くかも`,
     siteUrl: `https://r57ty7.github.io/nikorih-blog`,
     social: {
       twitter: `r57ty7`,
+      github: `r57ty7`,
     },
-    defaultImage: "images/bg.jpeg",
+    defaultImage: 'images/bg.jpeg',
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -34,6 +35,17 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: 'Table of Contents',
+              tight: false,
+              ordered: false,
+              fromHeading: 1,
+              toHeading: 6,
+              className: 'table-of-contents',
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -60,6 +72,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -89,7 +102,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    "gatsby-plugin-dark-mode",
+    `gatsby-plugin-dark-mode`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-typegen`,
   ],

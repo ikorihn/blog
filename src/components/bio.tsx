@@ -7,18 +7,21 @@
 
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import { rhythm } from '../utils/typography'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithubSquare,
+  faTwitterSquare,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Bio: React.FC = () => {
   const data = useStaticQuery<GatsbyTypes.BioQueryQuery>(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 50, height: 50, layout: FIXED)
         }
       }
       site {
@@ -29,13 +32,25 @@ const Bio: React.FC = () => {
           }
           social {
             twitter
+            github
           }
         }
       }
     }
   `)
 
+  if (
+    !data.site?.siteMetadata ||
+    !data.avatar?.childImageSharp?.gatsbyImageData
+  ) {
+    return <div />
+  }
+
   const { author, social } = data.site.siteMetadata
+  if (!author || !social) {
+    return <div />
+  }
+
   return (
     <div
       style={{
@@ -43,9 +58,9 @@ const Bio: React.FC = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
+      <GatsbyImage
+        image={data.avatar.childImageSharp.gatsbyImageData}
+        alt={author.name || ''}
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
@@ -56,11 +71,42 @@ const Bio: React.FC = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>Follow on Twitter</a>
-      </p>
+      <div className="flex items-center">
+        <p className="text-left">
+          <strong className="block">{author.name}</strong>
+          {author.summary}
+        </p>
+        <p className="ml-4">
+          <a
+            href={`https://github.com/${social.github}`}
+            style={{ boxShadow: `none` }}
+          >
+            <FontAwesomeIcon
+              color="#aeaeae"
+              icon={faGithubSquare}
+              style={{
+                width: `32px`,
+                height: `32px`,
+                marginRight: `4px`,
+              }}
+            />
+          </a>
+          <a
+            href={`https://twitter.com/${social.twitter}`}
+            style={{ boxShadow: `none` }}
+          >
+            <FontAwesomeIcon
+              color="#3eaded"
+              icon={faTwitterSquare}
+              style={{
+                width: `32px`,
+                height: `32px`,
+                marginRight: `4px`,
+              }}
+            />
+          </a>
+        </p>
+      </div>
     </div>
   )
 }
