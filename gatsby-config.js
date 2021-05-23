@@ -1,13 +1,13 @@
 module.exports = {
-  pathPrefix: '/ikorihn-blog',
+  pathPrefix: '/',
   siteMetadata: {
     title: `ikorihn Blog`,
     author: {
       name: 'ikorihn',
-      summary: `Web系エンジニア`,
+      summary: `Webエンジニア. Kotlin / TypeScript / Go / Vue.js`,
     },
-    description: `技術メモを中心に書いていく予定。ある程度まとまったテーマがあったらQiitaとかZennに書くかも`,
-    siteUrl: `https://r57ty7.github.io/nikorih-blog`,
+    description: `お前の草、dotfilesばっかりだな`,
+    siteUrl: `https://ikorihn-blog.netlify.app/`,
     social: {
       twitter: `r57ty7`,
       github: `r57ty7`,

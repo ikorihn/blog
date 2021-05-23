@@ -1,5 +1,7 @@
 # blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f762f182-38d0-4ff8-a7bd-8de785f73e1d/deploy-status)](https://app.netlify.com/sites/ikorihn-blog/deploys)
+
 ## セットアップ
 
 ```bash
@@ -10,16 +12,6 @@ yarn dev
 yarn build
 ```
 
-## 構築
-
-### スタートアップ
+## テーマ
 
 [Leonids](http://renyuanz.github.io/leonids)で初期化
-
-### TOCの表示
-
-https://haseebmajid.dev/blog/toc-in-gatsby/
-
-### TypeScript
-
-https://zenn.dev/ryo_kawamata/articles/gatsby-ts-2020
