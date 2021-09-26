@@ -14,4 +14,7 @@ yarn build
 
 ## テーマ
 
-[Leonids](http://renyuanz.github.io/leonids)で初期化
+```shell
+# create a new Gatsby site using the blog starter
+gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
+```
