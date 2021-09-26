@@ -1,11 +1,14 @@
-import * as React from "react"
-import { Link, graphql, PageProps } from "gatsby"
+import * as React from 'react'
+import { Link, graphql, PageProps } from 'gatsby'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 
-const BlogIndex : React.FC<PageProps<GatsbyTypes.BlogIndexQuery>> = ({ data, location }) => {
+const BlogIndex: React.FC<PageProps<GatsbyTypes.BlogIndexQuery>> = ({
+  data,
+  location,
+}) => {
   const siteTitle = data.site?.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -53,7 +56,8 @@ const BlogIndex : React.FC<PageProps<GatsbyTypes.BlogIndexQuery>> = ({ data, loc
                 <section>
                   <p
                     dangerouslySetInnerHTML={{
-                      __html: post.frontmatter?.description || post.excerpt || '',
+                      __html:
+                        post.frontmatter?.description || post.excerpt || '',
                     }}
                     itemProp="description"
                   />
