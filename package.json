@@ -16,6 +16,7 @@
     "gatsby-plugin-offline": "^4.13.0",
     "gatsby-plugin-react-helmet": "^4.13.0",
     "gatsby-plugin-sharp": "^3.13.0",
+    "gatsby-plugin-typegen": "^2.2.4",
     "gatsby-remark-copy-linked-files": "^4.10.0",
     "gatsby-remark-images": "^5.10.0",
     "gatsby-remark-prismjs": "^5.10.0",
@@ -32,7 +33,8 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
-    "prettier": "2.4.1"
+    "prettier": "2.4.1",
+    "typescript": "^4.4.3"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -45,12 +47,12 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run type-check && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "type-check": "tsc --noEmit"
   }
 }
