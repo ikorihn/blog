@@ -59,7 +59,7 @@ const BlogPostTemplate: React.FC<
           </li>
           <li>
             {next && (
-              <Link to={next.fields!.slug} rel="next">
+              <Link to={next.fields!.slug!} rel="next">
                 {next.frontmatter!.title} →
               </Link>
             )}
