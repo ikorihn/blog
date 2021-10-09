@@ -2,7 +2,7 @@
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 // index CSS
-import './src/tailwind.css'
+import './src/index.css'
 // normalize CSS across browsers
 import './src/normalize.css'
 // custom CSS styles
