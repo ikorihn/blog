@@ -52,6 +52,7 @@ module.exports = {
               maintainCase: false,
             },
           },
+          'gatsby-remark-code-titles',
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
