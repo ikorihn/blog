@@ -4,6 +4,7 @@ import { Link, graphql, PageProps } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import Toc from '../components/toc'
 
 const BlogPostTemplate: React.FC<
   PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.MarkdownRemarkEdge>
@@ -31,6 +32,14 @@ const BlogPostTemplate: React.FC<
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
+        <section
+          className="blog-post__description"
+        >
+          {post.frontmatter.description}
+        </section>
+        <Toc
+          tocHtml={post.tableOfContents}
+        />
         <section
           dangerouslySetInnerHTML={{ __html: post.html || '' }}
           itemProp="articleBody"
@@ -87,6 +96,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      tableOfContents
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
