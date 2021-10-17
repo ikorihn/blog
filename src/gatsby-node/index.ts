@@ -16,17 +16,13 @@ export const createPages: GatsbyNode['createPages'] = async ({
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+          nodes {
+            id
+            fields {
+              slug
             }
           }
         }
@@ -35,34 +31,37 @@ export const createPages: GatsbyNode['createPages'] = async ({
   )
 
   if (result.errors) {
-    throw result.errors
-  }
-
-  // Create blog posts pages.
-  if (result.data == undefined) {
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
     return
   }
-  const posts = result.data.allMarkdownRemark.edges
 
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+  const posts = result.data?.allMarkdownRemark.nodes
 
-    if (!post.node || !post.node.fields || !post.node.fields.slug) {
-      return
-    }
+  // Create blog posts pages
+  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+  // `context` is available in the template as a prop and as a variable in GraphQL
 
-    createPage({
-      path: post.node.fields.slug,
-      component: blogPost,
-      context: {
-        slug: post.node.fields.slug,
-        previous,
-        next,
-      },
+  if (posts && posts.length > 0) {
+    posts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : posts[index - 1].id
+      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+
+      createPage({
+        path: post.fields?.slug || 'article',
+        component: blogPost,
+        context: {
+          id: post.id,
+          previousPostId,
+          nextPostId,
+        },
+      })
     })
-  })
+  }
 
+  /*
   // Create blog post list pages
   const postsPerPage = 5
   const numPages = Math.ceil(posts.length / postsPerPage)
@@ -79,6 +78,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
       },
     })
   })
+  */
 }
 
 export const onCreateNode: GatsbyNode['onCreateNode'] = ({
@@ -96,4 +96,46 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({
       value,
     })
   }
+}
+
+export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] = async ({ actions }: { actions: Actions}) => {
+  const { createTypes } = actions
+
+  // Explicitly define the siteMetadata {} object
+  // This way those will always be defined even if removed from gatsby-config.js
+
+  // Also explicitly define the Markdown frontmatter
+  // This way the "MarkdownRemark" queries will return `null` even when no
+  // blog posts are stored inside "content/blog" instead of returning an error
+  createTypes(`
+    type SiteSiteMetadata {
+      author: Author
+      siteUrl: String
+      social: Social
+    }
+
+    type Author {
+      name: String
+      summary: String
+    }
+
+    type Social {
+      twitter: String
+    }
+
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+      fields: Fields
+    }
+
+    type Frontmatter {
+      title: String
+      description: String
+      date: Date @dateformat
+    }
+
+    type Fields {
+      slug: String
+    }
+  `)
 }

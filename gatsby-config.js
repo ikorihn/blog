@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/',
   siteMetadata: {
     title: `ikorihn Blog`,
     author: {
@@ -12,11 +11,9 @@ module.exports = {
       twitter: `r57ty7`,
       github: `r57ty7`,
     },
-    defaultImage: 'images/bg.jpeg',
   },
   plugins: [
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -36,20 +33,9 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-table-of-contents`,
-            options: {
-              exclude: 'Table of Contents',
-              tight: false,
-              ordered: false,
-              fromHeading: 1,
-              toHeading: 6,
-              className: 'table-of-contents',
-            },
-          },
-          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 630,
             },
           },
           {
@@ -59,51 +45,100 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: `gatsby-remark-autolink-headers`,
             options: {
-              showLineNumbers: true,
+              offsetY: 80,
+              icon: false,
+              maintainCase: false,
             },
           },
+          'gatsby-remark-code-titles',
+          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-          `gatsby-remark-autolink-headers`,
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-image`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: `ADD YOUR TRACKING ID HERE`,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-feed`,
       options: {
-        trackingId: `UA-62251910-1`,
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ 'content:encoded': node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+          },
+        ],
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `nikorih`,
-        short_name: `nikorih`,
+        name: `ikorihn Blog`,
+        short_name: `ikorihn`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `content/assets/profile.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-dark-mode`,
-    `gatsby-plugin-postcss`,
+    // `gatsby-plugin-offline`,
     `gatsby-plugin-typegen`,
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-emotion',
   ],
 }

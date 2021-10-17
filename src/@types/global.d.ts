@@ -1,1 +1,1 @@
-declare module 'gatsby-plugin-dark-mode'
+declare const __PATH_PREFIX__: string

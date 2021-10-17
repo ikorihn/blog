@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gatsby-code-title {
+  @apply bg-code-block text-text-light;
+  margin-bottom: -0.6rem;
+  padding: 6px 12px;
+  font-size: 0.8em;
+  line-height: 1;
+  font-weight: bold;
+  display: table;
+  border-radius: 4px 4px 0 0;
+}

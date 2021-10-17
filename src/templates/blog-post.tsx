@@ -1,55 +1,55 @@
-import React from 'react'
+import * as React from 'react'
 import { Link, graphql, PageProps } from 'gatsby'
 
+import Bio from '../components/bio'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
-import { rhythm, scale } from '../utils/typography'
+import Seo from '../components/seo'
+import Toc from '../components/toc'
 
-const BlogPostTemplate: React.FC<PageProps<
-  GatsbyTypes.BlogPostBySlugQuery,
-  GatsbyTypes.MarkdownRemarkEdge
->> = ({ data, pageContext, location }) => {
+const BlogPostTemplate: React.FC<
+  PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.MarkdownRemarkEdge>
+> = ({ data, location }) => {
   const post = data.markdownRemark
-  // const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
-  if (!post) {
+  const siteTitle = data.site?.siteMetadata?.title || `Title`
+  const { previous, next } = data
+
+  if (post === undefined || post.frontmatter === undefined) {
     return <div></div>
   }
 
   return (
-    <Layout title="Home">
-      <SEO
-        title={post.frontmatter?.title || ''}
-        description={post.frontmatter?.description || post.excerpt}
+    <Layout location={location} title={siteTitle}>
+      <Seo
+        title={post.frontmatter.title || ''}
+        description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article
+        className="blog-post"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
         <header>
-          <h1
-            style={{
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter?.title}
-          </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {post.frontmatter?.date}
-          </p>
+          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <p>{post.frontmatter.date}</p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html || '' }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
+        <section
+          className="blog-post__description"
+        >
+          {post.frontmatter.description}
+        </section>
+        <Toc
+          tocHtml={post.tableOfContents}
         />
+        <section
+          dangerouslySetInnerHTML={{ __html: post.html || '' }}
+          itemProp="articleBody"
+        />
+        <hr />
+        <footer>
+          <Bio />
+        </footer>
       </article>
-
-      <nav>
+      <nav className="blog-post-nav">
         <ul
           style={{
             display: `flex`,
@@ -61,15 +61,15 @@ const BlogPostTemplate: React.FC<PageProps<
         >
           <li>
             {previous && (
-              <Link to={previous.fields?.slug || ''} rel="prev">
-                ← {previous.frontmatter?.title}
+              <Link to={previous.fields!.slug!} rel="prev">
+                ← {previous.frontmatter!.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields?.slug || ''} rel="next">
-                {next.frontmatter?.title} →
+              <Link to={next.fields!.slug!} rel="next">
+                {next.frontmatter!.title} →
               </Link>
             )}
           </li>
@@ -82,24 +82,41 @@ const BlogPostTemplate: React.FC<PageProps<
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug(
+    $id: String!
+    $previousPostId: String
+    $nextPostId: String
+  ) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
       html
-      headings {
-        value
-        depth
-      }
+      tableOfContents
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+    }
+    previous: markdownRemark(id: { eq: $previousPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+    next: markdownRemark(id: { eq: $nextPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
       }
     }
   }

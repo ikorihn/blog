@@ -1,6 +1,12 @@
 // custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+import 'typeface-montserrat'
+import 'typeface-merriweather'
+// index CSS
+import './src/index.css'
+// normalize CSS across browsers
+import './src/normalize.css'
+// custom CSS styles
+import './src/style.css'
 
-import "prismjs/themes/prism-coy.css"
-import "prismjs/plugins/line-numbers/prism-line-numbers.css"
+// Highlighting for code blocks
+import 'prismjs/themes/prism.css'
