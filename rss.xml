@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ikorihn Blog]]></title><description><![CDATA[お前の草、dotfilesばっかりだな]]></description><link>https://ikorihn-blog.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 Jan 2022 07:34:07 GMT</lastBuildDate><item><title><![CDATA[2021年振り返り]]></title><description><![CDATA[2021年にやったこと Kotlin + Spring Boot 1月〜3月ごろはKotlin + Spring Boot を触っていました。
+Kotlinで初めてサーバーサイドを1から作れていい経験になりました。
+Spring BootはWeb…]]></description><link>https://ikorihn-blog.netlify.app/2021/12/look-back-2021/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/12/look-back-2021/</guid><pubDate>Fri, 31 Dec 2021 14:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;2021年にやったこと&quot;&gt;2021年にやったこと&lt;/h2&gt;
+&lt;h3 id=&quot;kotlin--spring-boot&quot;&gt;Kotlin + Spring Boot&lt;/h3&gt;
+&lt;p&gt;1月〜3月ごろはKotlin + Spring Boot を触っていました。
+Kotlinで初めてサーバーサイドを1から作れていい経験になりました。
+Spring BootはWebサーバーつくるにあたってほしい機能が一通り揃っていて助かりました。
+Springもほぼ初めてで悩むことはありましたが、Kotlinだから詰まったということはなかったように思います。&lt;/p&gt;
+&lt;p&gt;MockKできっちりテスト書きながら進められたのもよかったです。
+SpringがとにかくDI周りのことを何も考えなくてもやってくれるので、
+とくにハマることもなくinjectionしてmockしたらテストがかけてストレスが少なかったです。&lt;/p&gt;
+&lt;p&gt;この時期は技術的には楽しいことをやれていましたが、負荷も高くて疲れてもいました。&lt;/p&gt;
+&lt;h3 id=&quot;go--lambda&quot;&gt;Go + Lambda&lt;/h3&gt;
+&lt;p&gt;AWS Lambdaでバッチを書いたりAPIサーバー作ったりと、何かと触る機会が多かったです。
+何回か書いていくうちにテストのしやすさやメンテしやすさを考慮した設計ができるようになったと思います。&lt;/p&gt;
+&lt;p&gt;リリースされたばかりの&lt;a href=&quot;https://github.com/aws/aws-sdk-go-v2&quot;&gt;aws-sdk-go-v2&lt;/a&gt;も使いながら、知見を貯めることができました。&lt;/p&gt;
+&lt;h3 id=&quot;競プロ&quot;&gt;競プロ&lt;/h3&gt;
+&lt;p&gt;計算量とかアルゴリズムをちゃんと意識できるようにならなきゃいかんと思って、
+2月〜3月ごろは競プロにハマってC++を勉強したり
+&lt;a href=&quot;https://www.amazon.co.jp/dp/B08PV83L3N&quot;&gt;問題解決力を鍛える！アルゴリズムとデータ構造&lt;/a&gt; を読んだりしていました。&lt;/p&gt;
+&lt;p&gt;AtCoder茶色になったくらいで離れてしまいましたが、また再開したいと思っています。&lt;/p&gt;
+&lt;p&gt;業務上はそんなに活かせてないですが、データ量が大きいときにループしているコードを見て「これ1秒以上かかるけど大丈夫？」のような勘が働くようになったのは良かったと思います。&lt;/p&gt;
+&lt;h3 id=&quot;obsidian&quot;&gt;Obsidian&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://obsidian.md/&quot;&gt;Obsidian&lt;/a&gt; でメモを取るようになりました。
+markdownで全て管理できるのが気に入ってます。
+あまり使いこなせてる気はしませんが、markdownなので特定のツールにロックインされることがないのが嬉しいです。&lt;/p&gt;
+&lt;p&gt;Google KeepメモやEvernoteにためていたノート類もエクスポートして、markdown管理にしています。
+一発でmarkdownにすることができなかったので、一度Notionにインポートしてからmarkdownでエクスポートしました。&lt;/p&gt;
+&lt;p&gt;作業記録やタスクもObsidian上で管理するようになりました。
+いままでもTogglやTodoistは使っていましたが、ぜんぜん続かず思い出したときにだけ書くからあまり意味がなかったのですが、
+Obsidianは書くことのストレスが少なく、フォーマットも自由にいじれるので自分にあっているようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pouhon.net/obsidian-planner/6033/&quot;&gt;Day Planner&lt;/a&gt;の機能を使っています。&lt;/p&gt;
+&lt;p&gt;細かく記録をつけようと思うならTogglなどをきっちり使ったほうがいいんだと思いますが、
+大雑把に何時間くらい何をしていたか程度の把握にしか使っていないので十分でした。&lt;/p&gt;
+&lt;p&gt;あとからこの日何をしていたか振り返ることができるので今後も続けていきたいです。&lt;/p&gt;
+&lt;h3 id=&quot;今年見て良かったもの&quot;&gt;今年見て良かったもの&lt;/h3&gt;
+&lt;h4 id=&quot;映画&quot;&gt;映画&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;閃光のハサウェイ&lt;/li&gt;
+&lt;li&gt;シン・エヴァンゲリオン&lt;/li&gt;
+&lt;li&gt;映画大好きポンポさん&lt;/li&gt;
+&lt;li&gt;子供はわかってあげない&lt;/li&gt;
+&lt;li&gt;フリーガイ&lt;/li&gt;
+&lt;li&gt;コングvsゴジラ&lt;/li&gt;
+&lt;li&gt;ディパーテッド&lt;/li&gt;
+&lt;li&gt;ノクターナル・アニマルズ&lt;/li&gt;
+&lt;li&gt;リチャードジュエル&lt;/li&gt;
+&lt;li&gt;アップグレード&lt;/li&gt;
+&lt;li&gt;新感染 ファイナル・エクスプレス&lt;/li&gt;
+&lt;li&gt;ブラック・レイン&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;アニメ&quot;&gt;アニメ&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;呪術廻戦&lt;/li&gt;
+&lt;li&gt;無職転生&lt;/li&gt;
+&lt;li&gt;ODD TAXI&lt;/li&gt;
+&lt;li&gt;ブルーピリオド&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;ドラマ&quot;&gt;ドラマ&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;クイーンズ・ギャンビット&lt;/li&gt;
+&lt;li&gt;ファルコン&amp;#x26;ウィンターソルジャー&lt;/li&gt;
+&lt;li&gt;浅草キッド&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;漫画&quot;&gt;漫画&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;推しの子&lt;/li&gt;
+&lt;li&gt;左利きのエレン&lt;/li&gt;
+&lt;li&gt;チェンソーマン&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;マラソン&quot;&gt;マラソン&lt;/h3&gt;
+&lt;p&gt;月間100kmを目標に概ね達成しました。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4ce8a112f50d1176f84c75f3ccdac5b0/295bd/2022-01-01-00-16-08.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 76.58227848101265%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACL0lEQVQ4y41Ta0/UUBDtj/erH0w0kKAigqKiKL4STfwMapTlUR5lQY3Juouy7W7vo7e37TFn7hbRgDrJ5N6ZO3PmzHQa9ft9xHGM1dVVGGNwnjRN81f7rERpmqLX68E5h7qukec5tNaiSqnTZJ6tUhjLGOYxjmdRFIgGgwGSJIG1VoKyLMNoNBJlMfoIwrNV2lVVQSktICRBQGJEbXUGXtTuRXpuy3zw3ofqZ4JrKTI5fwNpUNUBbGHH4Ou4kruvw7swJCCaejKbhrQk8TwNYAHw8vscrz8XeHFo237IEKh9idR4rA9KceeuxqtPBY4yj27q8bbnsNZzePfNyTv9m8clbmxqPEospjpK4o51hahku84gGZa4tJZLFbZx5YPC3V2D+dhIwq1tLTblzZcCMxsaczEBDRZig6sflRCKCufgbagw3VG4v2fw/NAK0IM9IzbBFncNHu4bvDyyeNq1uLcb/PTdjjWub2phHfmqBiqH5KTEVEfLoFe6VoIIxsSbW4EdC/BOkMU/AMl4g4CTtRXA6U5g8kwAAzvq7FbwL+1bzO8YLCdW7LltIzNk7EzLMGxAhb0fDtfWtczjyYHF7KRNMmM7ZN62v7RvcGcnsOWdPpLp/AJs0B2WmNvWWE6MfGG2t3JgBZzAZMXZ0c81eZzY03nTRyLx9zLsIfeuKD2GyiJVFmPjkOkCmbLIVIFMO4yMw9iUSHOLEd8myljmDHML43z4U/5HToyX//Zf8hOoZ2X06JltNgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2022 01 01 00 16 08&quot;
+        title=&quot;2022 01 01 00 16 08&quot;
+        src=&quot;/static/4ce8a112f50d1176f84c75f3ccdac5b0/f058b/2022-01-01-00-16-08.png&quot;
+        srcset=&quot;/static/4ce8a112f50d1176f84c75f3ccdac5b0/c26ae/2022-01-01-00-16-08.png 158w,
+/static/4ce8a112f50d1176f84c75f3ccdac5b0/6bdcf/2022-01-01-00-16-08.png 315w,
+/static/4ce8a112f50d1176f84c75f3ccdac5b0/f058b/2022-01-01-00-16-08.png 630w,
+/static/4ce8a112f50d1176f84c75f3ccdac5b0/295bd/2022-01-01-00-16-08.png 667w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;合計: 1260km
+平均ペース: 5分1秒&lt;/p&gt;
+&lt;p&gt;ピクミンブルームの花植えが捗りました。&lt;/p&gt;
+&lt;h2 id=&quot;2022年&quot;&gt;2022年&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;インプット・アウトプットを増やす(小並感)
+&lt;ul&gt;
+&lt;li&gt;最近本を読んだり技術習得したりできていないので、もっとアウトプットを意識したインプットをしていく&lt;/li&gt;
+&lt;li&gt;レガシーコードを頑張って読み解いて、長年積み重なった山を崩さないようにしながらどうにか動かすみたいな仕事が多かったので、来年はもっと大幅にきれいにしたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;引っ越し
+&lt;ul&gt;
+&lt;li&gt;今後も毎日出社にはならないであろうと信じて、多少遠くても住みやすくて広いところに住みたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;マラソン
+&lt;ul&gt;
+&lt;li&gt;2年ほど大会に出れていないので、ハーフ 1:40、フル サブ3.5 を目標にして大会にでたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TypeScriptのGatsbyをNetlifyでビルドしたときのエラーに対応した]]></title><description><![CDATA[事象 TypeScript化したGatsbyをNetlifyでビルドした際に以下のエラーが発生しました。 対応 Netlifyのビルドログに  とあるようにデフォルトではv12.18.0が使われるようです。
+Optional ChainingはNode.js v1…]]></description><link>https://ikorihn-blog.netlify.app/2021/10/build-typescript-on-netlify/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/10/build-typescript-on-netlify/</guid><pubDate>Sun, 31 Oct 2021 10:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;事象&quot;&gt;事象&lt;/h2&gt;
+&lt;p&gt;TypeScript化したGatsbyをNetlifyでビルドした際に以下のエラーが発生しました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ gatsby build
+error Error &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/opt/build/repo/gatsby-node.js&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; Unexpected token &lt;span class=&quot;token string&quot;&gt;&apos;.&apos;&lt;/span&gt;
+
+
+  Error: /opt/build/repo/src/gatsby-node/index.ts:28
+      const posts &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; result.data?.allMarkdownRemark.nodes&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                                ^
+  SyntaxError: Unexpected token &lt;span class=&quot;token string&quot;&gt;&apos;.&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;対応&quot;&gt;対応&lt;/h2&gt;
+&lt;p&gt;Netlifyのビルドログに &lt;code class=&quot;language-text&quot;&gt;Now using node v12.18.0 (npm v6.14.4)&lt;/code&gt; とあるようにデフォルトではv12.18.0が使われるようです。
+Optional ChainingはNode.js v14から使用できる機能のため、v14以上が使用されるように設定します。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.netlify.com/configure-builds/manage-dependencies/&quot;&gt;Manage build dependencies | Netlify Docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;環境変数 &lt;code class=&quot;language-text&quot;&gt;NODE_VERSION&lt;/code&gt; で指定できるため以下のように設定しました。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 526px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/08489cbc1fdd0029dd45fd6cb32df7e6/2d7ab/2021-10-31-17-31-50.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 72.78481012658227%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB3UlEQVQ4y51T227bMAz1///YXjo0BXJfhzWJY1t3+S7bss8gOjGyokW3ETggRRJHJEVF39cbrHZ7BP3teYVUKXgAbhzRTQHTgtk3fQjnPZphQPTjdMLr+UI4vp1wzjIwbcCMgbAWmdZIpaKLhM2RSEm+TGmyKSYVbNMQaSSLAqosCcHm1t4ILfgNgZzbnOKZNnOOmS8NxCE3b1q0gRB/KdMNeNCPMk4T/DgiOl9ibPYHHF9/Yns4Yr3b4+18Id/T8ws2uwOGYZiJpulT3CUqqwpMCHAhkTKOlDHoMDvOkWSMzuM4ft3BjTgKyY8IzqC999RGkL7v4boOrXOknXOz7Ry6roP340JKFQqlIJUmKG0gpEKcpFSx1JrOAYwLSKWWHC4lIZAvhE3bwuYFglbGIC+KD4d+l34YYIsCoZD3LdMMc5uDZQzWWCRJCs54iH5K2DYtrtfklvcwv9vzR1XnIOsSsiqh6gqiKpHlFiy3SHOLxBqIsiDfSQnwsoBpG8i6oljduaU6atnUNbIip8SgA0lsNCXHRuGk5OL7JfgcMxqxVjgridK1fxL2XYdrnIAxTi2H9n0/4F9lWZuqqvGy3mK93eNp9UJ2UVZfLvL7hV4We/B++VZ3BF94zf/Bb+GRhvReSLadAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2021 10 31 17 31 50&quot;
+        title=&quot;2021 10 31 17 31 50&quot;
+        src=&quot;/static/08489cbc1fdd0029dd45fd6cb32df7e6/2d7ab/2021-10-31-17-31-50.png&quot;
+        srcset=&quot;/static/08489cbc1fdd0029dd45fd6cb32df7e6/c26ae/2021-10-31-17-31-50.png 158w,
+/static/08489cbc1fdd0029dd45fd6cb32df7e6/6bdcf/2021-10-31-17-31-50.png 315w,
+/static/08489cbc1fdd0029dd45fd6cb32df7e6/2d7ab/2021-10-31-17-31-50.png 526w&quot;
+        sizes=&quot;(max-width: 526px) 100vw, 526px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;これでビルドが通るようになりました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsbyでブログを作ったので、構築ログを残す]]></title><description><![CDATA[Gatsby.js について https://www.gatsbyjs.com/ Reactでつくられた静的サイトジェネレータ Reactをビルド時に1回だけ実行し、HTML,JS…]]></description><link>https://ikorihn-blog.netlify.app/2021/10/start-blog-with-gatsby/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/10/start-blog-with-gatsby/</guid><pubDate>Sun, 10 Oct 2021 10:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;gatsbyjs-について&quot;&gt;Gatsby.js について&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;https://www.gatsbyjs.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reactでつくられた静的サイトジェネレータ&lt;/p&gt;
+&lt;p&gt;Reactをビルド時に1回だけ実行し、HTML,JSを生成する。
+生成されたファイルをホスティングサービスにデプロイするだけで見られるようになる。&lt;/p&gt;
+&lt;h3 id=&quot;graphql&quot;&gt;GraphQL&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Gatsby.jsではビルド時のさまざまなデータをGraphQLで取得する。&lt;/li&gt;
+&lt;li&gt;Markdown形式で書いた情報を、ファイルシステムから読み込んで、GraphQL経由で取得し、Reactコンポーネント内で表示する。&lt;/li&gt;
+&lt;li&gt;GatsbyではMarkdownファイルに限らず、様々なデータを &lt;code class=&quot;language-text&quot;&gt;data source&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;data transformer&lt;/code&gt; という枠組みで一般化することで、多様な処理を統一的にかつ簡潔に記述することができている。&lt;/li&gt;
+&lt;li&gt;クライアントはビルド時に形成されたGraphQL DBの全体は必要ないので、「クエリの結果」のみをJSONとして合わせてデプロイする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;starterを使ってblogを作成&quot;&gt;starterを使ってblogを作成&lt;/h2&gt;
+&lt;p&gt;テンプレートを利用してブログを構築しました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npx gatsby new gatsby-starter https://github.com/gatsbyjs/gatsby-starter-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;※最初、&lt;a href=&quot;https://www.gatsbyjs.com/starters/renyuanz/leonids/&quot;&gt;Leonids&lt;/a&gt; で構築しましたがいまいち気に入らなかったので、&lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog&quot;&gt;gatsby-starter-blog&lt;/a&gt; で作り直しました。
+作り直すにあたっては、別ディレクトリでstarterから作成 → ファイル一式をコピー → TypeScriptへの変換等で地道に行いました。&lt;/p&gt;
+&lt;h2 id=&quot;typescript化する&quot;&gt;TypeScript化する&lt;/h2&gt;
+&lt;p&gt;tsxに変更
+GraphQLのクエリ結果を型解決する&lt;/p&gt;
+&lt;h2 id=&quot;tailwindcss&quot;&gt;TailwindCSS&lt;/h2&gt;
+&lt;p&gt;TailwindCSSのユーティリティを組み合わせる思想が好きでよく使用するので、本ブログでも
+&lt;a href=&quot;https://www.gatsbyjs.com/docs/how-to/styling/tailwind-css/&quot;&gt;https://www.gatsbyjs.com/docs/how-to/styling/tailwind-css/&lt;/a&gt;
+に沿って設定していきます。&lt;/p&gt;
+&lt;h3 id=&quot;インストール初期設定&quot;&gt;インストール、初期設定&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; -D tailwindcss@npm:@tailwindcss/postcss7-compat autoprefixer
+npx tailwindcss init&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;postcssで適用する&quot;&gt;PostCSSで適用する&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; postcss gatsby-plugin-postcss&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;gatsby-config.js&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;gatsby-plugin-postcss&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;postcss.config.js&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;tailwindcss&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;base-cssを追加する&quot;&gt;base CSSを追加する&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;@tailwind&lt;/code&gt; ディレクティブを使用してTailwindの &lt;code class=&quot;language-text&quot;&gt;base&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;components&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;utilities&lt;/code&gt; をCSSに挿入します。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;src/index.css&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@tailwind&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@tailwind&lt;/span&gt; components&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@tailwind&lt;/span&gt; utilities&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;カスタムCSSにTailwindのクラスを適用したい場合以下のように書ける&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;src/index.css&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@tailwind&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@tailwind&lt;/span&gt; components&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@tailwind&lt;/span&gt; utilities&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@import&lt;/span&gt; popup.css body&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@apply&lt;/span&gt; bg-purple-200&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-browser.js&lt;/code&gt; で読み込む&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;gatsby-browser.js&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;./src/index.css&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;purge-を設定する&quot;&gt;Purge を設定する&lt;/h3&gt;
+&lt;p&gt;デフォルトではTailwindCSS全体がビルドに含まれるため、ファイルサイズ削減のために必要なclassのみにpurgeする。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;tailwind.config.js&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  purge&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;./src/**/*.{js,jsx,ts,tsx}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  theme&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  variants&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;tocを追加&quot;&gt;TOCを追加&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/plugins/gatsby-remark-autolink-headers/&quot;&gt;gatsby-remark-autolink-headers&lt;/a&gt; で見出しにアンカーがつくようにする&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; gatsby-remark-autolink-headers&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;gatsby-config.js&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      resolve&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;gatsby-transformer-remark&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      options&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            resolve&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;gatsby-remark-autolink-headers&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            options&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              offsetY&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+              icon&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+              maintainCase&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;tocコンポーネントを作成してページのコンポーネントに追加&quot;&gt;TOCコンポーネントを作成してページのコンポーネントに追加&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript:toc.tsx&quot;&gt;&lt;pre class=&quot;language-typescript:toc.tsx&quot;&gt;&lt;code class=&quot;language-typescript:toc.tsx&quot;&gt;import * as React from &amp;#39;react&amp;#39;
+
+type Props = {
+  tocHtml?: string
+}
+const Toc: React.FC&amp;lt;Props&amp;gt; = ({tocHtml}) =&amp;gt; {
+  if (tocHtml === undefined) {
+    return &amp;lt;&amp;gt;&amp;lt;/&amp;gt;
+  }
+  return (
+    &amp;lt;div className=&amp;quot;toc bg-code-block px-4 py-1 my-2&amp;quot;&amp;gt;
+      &amp;lt;h4 className=&amp;quot;toc__title mt-2&amp;quot;&amp;gt;目次&amp;lt;/h4&amp;gt;
+      &amp;lt;div
+        className=&amp;quot;toc__content&amp;quot;
+        dangerouslySetInnerHTML={{
+          __html: tocHtml,
+        }}
+      /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  )
+}
+
+export default Toc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript:bolg-post.tsx&quot;&gt;&lt;pre class=&quot;language-typescript:bolg-post.tsx&quot;&gt;&lt;code class=&quot;language-typescript:bolg-post.tsx&quot;&gt;// ....
+  return (
+    &amp;lt;Layout location={location} title={siteTitle}&amp;gt;
+
+      &amp;lt;article
+        className=&amp;quot;blog-post&amp;quot;
+        itemScope
+        itemType=&amp;quot;http://schema.org/Article&amp;quot;
+      &amp;gt;
+        &amp;lt;header&amp;gt;
+          &amp;lt;h1 itemProp=&amp;quot;headline&amp;quot;&amp;gt;{post.frontmatter.title}&amp;lt;/h1&amp;gt;
+          &amp;lt;p&amp;gt;{post.frontmatter.date}&amp;lt;/p&amp;gt;
+        &amp;lt;/header&amp;gt;
+        &amp;lt;section
+          className=&amp;quot;blog-post__description&amp;quot;
+        &amp;gt;
+          {post.frontmatter.description}
+        &amp;lt;/section&amp;gt;
+        &amp;lt;Toc
+          tocHtml={post.tableOfContents}
+        /&amp;gt;
+// ...
+    &amp;lt;/Layout&amp;gt;
+  )&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;コードブロックにタイトルを設定&quot;&gt;コードブロックにタイトルを設定&lt;/h2&gt;
+&lt;p&gt;参考: &lt;a href=&quot;https://littlebylittle.work/2020/01/gatsby-syntax-highlighting/&quot;&gt;Gatsbyにシンタックスハイライトを入れてコードをきれいに表示する | littlebylittle&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/plugins/gatsby-remark-code-titles/&quot;&gt;gatsby-remark-code-titles&lt;/a&gt; を使って、コードブロックにタイトルをつけます&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; gatsby-remark-code-titles&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;gatsby-config.js&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      resolve&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;gatsby-transformer-remark&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      options&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos;gatsby-remark-code-titles&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;gatsby-remark-prismjs&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;コードタイトル用のスタイルを追加&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;index.css&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.gatsby-code-title&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@apply&lt;/span&gt; bg-code-block text-text-light&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -0.6rem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 6px 12px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0.8em&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; bold&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; table&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 4px 4px 0 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Jenkinsの見た目をカスタマイズ]]></title><description><![CDATA[モチベーション Jenkins のデフォルトの見た目は古臭いので、好きなテーマに変更したい。
+また、環境ごとの違いをひと目でわかりやすくすることで事故を防ぐ。 jenkins-material-theme をダウンロード http://afonsof.com/jenkins…]]></description><link>https://ikorihn-blog.netlify.app/2021/09/jenkins-ui-customize/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/09/jenkins-ui-customize/</guid><pubDate>Mon, 27 Sep 2021 10:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;toc&quot;&gt;&lt;pre class=&quot;language-toc&quot;&gt;&lt;code class=&quot;language-toc&quot;&gt;# This code block gets replaced with the TOC&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;モチベーション&quot;&gt;モチベーション&lt;/h2&gt;
+&lt;p&gt;Jenkins のデフォルトの見た目は古臭いので、好きなテーマに変更したい。
+また、環境ごとの違いをひと目でわかりやすくすることで事故を防ぐ。&lt;/p&gt;
+&lt;h2 id=&quot;jenkins-material-theme-をダウンロード&quot;&gt;jenkins-material-theme をダウンロード&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://afonsof.com/jenkins-material-theme/&quot;&gt;http://afonsof.com/jenkins-material-theme/&lt;/a&gt;
+から色とロゴを指定してテーマをダウンロードする。&lt;/p&gt;
+&lt;h2 id=&quot;プラグインを設定&quot;&gt;プラグインを設定&lt;/h2&gt;
+&lt;p&gt;[Jenkinsの管理] -&gt; [プラグインの管理] -&gt; [利用可能] -&gt; &lt;a href=&quot;https://plugins.jenkins.io/simple-theme-plugin/&quot;&gt;Simple Theme Plugin&lt;/a&gt; をインストール&lt;/p&gt;
+&lt;p&gt;ダウンロードしたスタイルシートのファイル（jenkins-material-theme.css）を Jenkins フォルダの userContent フォルダへ配置する&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jenkinsを置いてあるサーバにSSHログイン&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;ドキュメントルート(/var/lib/jenkins/など)&gt;/userContent/jenkins-material-theme.css&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jenkinsの管理のシステムの設定でダウンロードしたテーマを指定する。&lt;/p&gt;
+&lt;p&gt;URL of theme CSSにこちらを入力して保存: &lt;code class=&quot;language-text&quot;&gt;/userContent/jenkins-material-theme.css&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;material-theme-を適用したときにpipelineエディタでカーソル位置と実際に編集される位置がずれる&quot;&gt;material-theme を適用したときに、pipelineエディタでカーソル位置と実際に編集される位置がずれる&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;:not(div.ace_editor)&lt;/code&gt; に &lt;code class=&quot;language-text&quot;&gt;font-family: Roboto, sans-serif!important&lt;/code&gt; が設定されているため等幅フォントになっていない。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/afonsof/jenkins-material-theme/issues/184&quot;&gt;Main Script — Replay — the cursor in the editor is out of phase · Issue #184 · afonsof/jenkins-material-theme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;等幅フォントを設定してあげればよい。
+自分でカスタマイズできるのが利点&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css:jenkins-material-theme.css&quot;&gt;&lt;pre class=&quot;language-css:jenkins-material-theme.css&quot;&gt;&lt;code class=&quot;language-css:jenkins-material-theme.css&quot;&gt;#main-panel&amp;gt;pre *,
+.ace_editor .ace_scroller .ace_content * {
+  font-family: Roboto Mono, monospace !important;
+}
+
+div.ace_editor.ace-tomorrow,
+div.ace_editor.ace-tomorrow * {
+  font: 12px/normal Roboto Mono, monospace !important;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://techblog.recochoku.jp/2021&quot;&gt;Jenkinsのテーマ(UI)を変えてみた | レコチョクのエンジニアブログ&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Googleカレンダーの予定時刻になったらMeetを自動で開くようにする]]></title><description><![CDATA[モチベーション オンラインミーティングをGoogle Meetでやっているのですが、気づいたら開始時間を過ぎていることがあります(本当によくない)
+通知が来たときに開始までに少し時間があるので別な作業をしてしまうパターンが多いです。 時間になったらMeet…]]></description><link>https://ikorihn-blog.netlify.app/2021/09/open-google-meet-at-time/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/09/open-google-meet-at-time/</guid><pubDate>Fri, 24 Sep 2021 10:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;toc&quot;&gt;&lt;pre class=&quot;language-toc&quot;&gt;&lt;code class=&quot;language-toc&quot;&gt;# This code block gets replaced with the TOC&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;モチベーション&quot;&gt;モチベーション&lt;/h2&gt;
+&lt;p&gt;オンラインミーティングをGoogle Meetでやっているのですが、気づいたら開始時間を過ぎていることがあります(本当によくない)
+通知が来たときに開始までに少し時間があるので別な作業をしてしまうパターンが多いです。&lt;/p&gt;
+&lt;p&gt;時間になったらMeetの画面を自動で開いて、強制的に作業を中断すればそんなことがなくなる気がします。&lt;/p&gt;
+&lt;h2 id=&quot;方針&quot;&gt;方針&lt;/h2&gt;
+&lt;p&gt;Googleカレンダーから予定を取得して、時間になったらそのMeetのURLをブラウザで開くようにしたいと思います。&lt;/p&gt;
+&lt;p&gt;やり方はいろいろあると思います。
+Chrome拡張でカレンダーにアクセスする、Calendar APIでスケジュール一覧を取得する、…&lt;/p&gt;
+&lt;p&gt;今回は諸般の事情でCalendar APIを直接使えなかったため、以下の方針にしました。
+OSはMacです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Apps Script(GAS) でカレンダーから一日のスケジュールをJSONで取得する&lt;/li&gt;
+&lt;li&gt;このGASをWebアプリとして公開して、HTTP GETで取得できるようにする&lt;/li&gt;
+&lt;li&gt;スケジュールの時刻に &lt;code class=&quot;language-text&quot;&gt;at&lt;/code&gt; コマンドをセットして、&lt;code class=&quot;language-text&quot;&gt;open &amp;lt;MeetのURL&gt;&lt;/code&gt; を実行する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ターミナルで &lt;code class=&quot;language-text&quot;&gt;at&lt;/code&gt; をセットするのは今のところ手で朝に実行しています。&lt;/p&gt;
+&lt;p&gt;もっといいやり方がある気はしますが、とりあえずこれでやりたいことは出来ました。
+以下、各手順となります。&lt;/p&gt;
+&lt;h2 id=&quot;スケジュール取得gasを作成する&quot;&gt;スケジュール取得GASを作成する&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://script.google.com/home&quot;&gt;https://script.google.com/home&lt;/a&gt; から新しいスクリプトを作成する&lt;/p&gt;
+&lt;h3 id=&quot;gasのcalendar-apiを有効化&quot;&gt;GASのCalendar APIを有効化&lt;/h3&gt;
+&lt;p&gt;標準の &lt;a href=&quot;https://developers.google.com/apps-script/reference/calendar&quot;&gt;CalendarApp&lt;/a&gt; では取れる情報が少なくMeetのURLがとれないため、&lt;a href=&quot;https://developers.google.com/apps-script/advanced/calendar&quot;&gt;Calendar API&lt;/a&gt; を使用する&lt;/p&gt;
+&lt;p&gt;GASのエディタ &gt; サービス &gt; Calendar を有効化&lt;/p&gt;
+&lt;h3 id=&quot;dayjs-を使えるようにする&quot;&gt;dayjs を使えるようにする&lt;/h3&gt;
+&lt;p&gt;標準の &lt;a href=&quot;https://developers.google.com/apps-script/reference/utilities/utilities&quot;&gt;Utilities.formatDate&lt;/a&gt; でも日付フォーマットはできるが、もう少し日付をうまく扱うためにライブラリを入れる。
+Moment.jsは開発が止まっているので、dayjsを使う。&lt;/p&gt;
+&lt;p&gt;GASのエディタ &gt; ライブラリを追加 &gt; dayjs のスクリプトID &lt;code class=&quot;language-text&quot;&gt;1ShsRhHc8tgPy5wGOzUvgEhOedJUQD53m-gd8lG2MOgs-dXC_aCZn9lFB&lt;/code&gt; を入力&lt;/p&gt;
+&lt;h4 id=&quot;余談&quot;&gt;余談&lt;/h4&gt;
+&lt;p&gt;ライブラリのスクリプトIDを検索する方法がわからない…
+仕方なく個人ブログやQiitaから情報を得たけど、公式情報じゃないので気持ち悪い&lt;/p&gt;
+&lt;p&gt;スクリプトIDのエディタのURLを開くと、たしかにdayjsのコードのよう
+&lt;a href=&quot;https://script.google.com/home/projects/1ShsRhHc8tgPy5wGOzUvgEhOedJUQD53m-gd8lG2MOgs-dXC_aCZn9lFB/edit&quot;&gt;https://script.google.com/home/projects/1ShsRhHc8tgPy5wGOzUvgEhOedJUQD53m-gd8lG2MOgs-dXC_aCZn9lFB/edit&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;カレンダーから予定を取得してjsonで返却する実装&quot;&gt;カレンダーから予定を取得してJSONで返却する実装&lt;/h3&gt;
+&lt;p&gt;Webアプリとして使えるようにするため、&lt;code class=&quot;language-text&quot;&gt;doGet&lt;/code&gt; 関数をエントリーポイントに実装する&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript:code.gs&quot;&gt;&lt;pre class=&quot;language-javascript:code.gs&quot;&gt;&lt;code class=&quot;language-javascript:code.gs&quot;&gt;function doGet(e) {
+    return ContentService.createTextOutput(JSON.stringify(getSchedule()));
+}
+
+function getSchedule() {
+  const now = new Date();
+  const begin = dayjs.dayjs(now);
+  const end = dayjs.dayjs(now).endOf(&amp;#39;day&amp;#39;);
+    
+  // デフォルトカレンダーのID
+  const calendarId = CalendarApp.getDefaultCalendar().getId();
+
+  // Calendar APIで本日の予定を取得する
+  const events = Calendar.Events.list(calendarId, {
+    timeMin: begin.toISOString(),
+    timeMax: end.toISOString(),
+    singleEvents: true,
+    orderBy: &amp;#39;startTime&amp;#39;,
+  })
+
+  const todayEvent = events.items.map(event =&amp;gt; {
+    let start;
+    if (event.start.date) {
+      // All-day event.
+      start = new Date(event.start.date);
+    } else {
+      start = new Date(event.start.dateTime);
+    }
+
+    // atコマンドで扱いやすい時間形式にフォーマット
+    return {
+      title: event.summary,
+      start: dayjs.dayjs(start).subtract(1, &amp;#39;minute&amp;#39;).format(&amp;quot;YYYYMMDDHHmm&amp;quot;),
+      meetUrl: event.hangoutLink,
+    }
+  })
+
+  return todayEvent;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;webアプリとして公開&quot;&gt;Webアプリとして公開&lt;/h3&gt;
+&lt;p&gt;デプロイ &gt; 新しいデプロイ &gt; 説明を入力してデプロイ &gt; WebアプリのURLを取得&lt;/p&gt;
+&lt;h2 id=&quot;atコマンドを有効化&quot;&gt;atコマンドを有効化&lt;/h2&gt;
+&lt;p&gt;Macのatコマンドはデフォルトでは無効になっているので有効化する。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://qiita.com/shge/items/6c43947a77abd9d2d1b2&quot;&gt;Macでatコマンドが実行できないときの対処法 - Qiita&lt;/a&gt;
+&lt;a href=&quot;https://neos21.net/blog/2019/09/13-02.html&quot;&gt;MacOS で at コマンドを有効化して使ってみる - Neo’s World&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; launchctl load -w /System/Library/LaunchDaemons/com.apple.atrun.plist&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/usr/libexec/atrun&lt;/code&gt; にフルディスクアクセスをつける&lt;/p&gt;
+&lt;h2 id=&quot;ターミナルで予定一覧を取得してatコマンドで設定&quot;&gt;ターミナルで予定一覧を取得して、atコマンドで設定&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -L &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;GASのWebアプリURL&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; jq -r &lt;span class=&quot;token string&quot;&gt;&apos;.[] | .title + &quot;,&quot; + .start + &quot;,&quot; + .meetUrl&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; -F &lt;span class=&quot;token string&quot;&gt;&apos;,&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{ print system(&quot;echo open &quot; $3 &quot; | at -t &quot; $2 ) }&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;まとめ&quot;&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;毎朝手動でatコマンドを仕込むようにしていて、そこだけは手間だがいまのところこれのおかげで時間になったら作業を止めることができている。&lt;/p&gt;
+&lt;p&gt;atコマンドはデフォルトで無効になっていて、Macでスケジュール実行のコマンドはlaunchdを使ったほうがいいのではという気がしている。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Karabiner-Elementsで個人的におすすめのキーバインド]]></title><description><![CDATA[Karabiner-Elements とは Macのキーボードをカスタマイズするためのツールです。
+これを使えばUSキーボードでもJIS…]]></description><link>https://ikorihn-blog.netlify.app/2021/08/karabiner-elements-recommend/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/08/karabiner-elements-recommend/</guid><pubDate>Sun, 15 Aug 2021 10:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;toc&quot;&gt;&lt;pre class=&quot;language-toc&quot;&gt;&lt;code class=&quot;language-toc&quot;&gt;# This code block gets replaced with the TOC&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;karabiner-elements-とは&quot;&gt;Karabiner-Elements とは&lt;/h2&gt;
+&lt;p&gt;Macのキーボードをカスタマイズするためのツールです。
+これを使えばUSキーボードでもJIS配列のようにかな/英数キーを割り当てるなどが可能になります。&lt;/p&gt;
+&lt;p&gt;ここでは個人的に使っているキーバインドを紹介します。
+インストールや設定方法については色々なサイトで紹介されているので省略します。&lt;/p&gt;
+&lt;p&gt;ルールについては &lt;a href=&quot;https://ke-complex-modifications.pqrs.org/&quot;&gt;https://ke-complex-modifications.pqrs.org/&lt;/a&gt; から探すことができます。
+Karabiner-ElementsのPreferences -&gt; Complex modifications -&gt; Import more rules from the Internet から飛べます。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b7d348c0a9e22f7e5fb3247817d5f526/91f10/2021-08-15-16-28-21.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVQoz3VSXUvDQBDMvxA1jUmud7lLckmbGighpDV+i6KlBYsfoIKC/v/3kd3Ymgd9GI7Z252b3VunLAy0kVBCQcsIkVSIhgpKSOY2ThmJSRBHZntH5yZ3E5NiCGdvZx+DXReB52PoCwhfIPQCTjJKI08zFKMCNrHdg0LBSI3wIGAEXsC13v4Agz0XzoHrIQojSF8yhCcYs6pB27SY13M++6BYohLOk0FXpwLF4o6762KcjnHctDiq56jKCpm2MEOD+AemB+JaaK5ZL++xuL5jXmQFj80hm1ZbdjSrZihsAatTpNH/sFHKwq/PL1jdrWCExiQvIEMJh+aXmYzdkSiJUztdcfIHujjlPK+fsLhZsDiZ2Lacxzkujs9xeXKB6WSKWMZIVVf0H0jk6+MTj/cP7DDdCJJDctXWRzxHbocEyQk53brtcRKUMT7e3rFerXm2ti84ySYsRh9SjkqM4rzXdvcAOerPke6Xt0tcnV4iIQN9wXJcop7WOBwdoqkaHgGtAq0TrQatyll7xpzWYwPm4S/3Bz6+AZnbMPBL7TGVAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2021 08 15 16 28 21&quot;
+        title=&quot;2021 08 15 16 28 21&quot;
+        src=&quot;/static/b7d348c0a9e22f7e5fb3247817d5f526/f058b/2021-08-15-16-28-21.png&quot;
+        srcset=&quot;/static/b7d348c0a9e22f7e5fb3247817d5f526/c26ae/2021-08-15-16-28-21.png 158w,
+/static/b7d348c0a9e22f7e5fb3247817d5f526/6bdcf/2021-08-15-16-28-21.png 315w,
+/static/b7d348c0a9e22f7e5fb3247817d5f526/f058b/2021-08-15-16-28-21.png 630w,
+/static/b7d348c0a9e22f7e5fb3247817d5f526/40601/2021-08-15-16-28-21.png 945w,
+/static/b7d348c0a9e22f7e5fb3247817d5f526/91f10/2021-08-15-16-28-21.png 992w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;change-spacebar-to-left_shift-if-pressed-with-other-keys-post-spacebar-when-pressed-alone&quot;&gt;Change spacebar to left_shift if pressed with other keys (Post spacebar when pressed alone)&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ke-complex-modifications.pqrs.org/#spacebar&quot;&gt;Change spacebar&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;スペースキーにShiftを割り当て、スペースキー単独で押したときにはスペースが入力されます。
+いわゆる &lt;code class=&quot;language-text&quot;&gt;SandS (Space and Shift)&lt;/code&gt; というものです。&lt;/p&gt;
+&lt;p&gt;特にShift+数字の入力が遠く感じてミスが多かったのが、かなり改善されました。&lt;/p&gt;
+&lt;p&gt;注意としては、スペース押しっぱなしにしても1つしか入力されないので、連続入力したい場合連打が必要になります。&lt;/p&gt;
+&lt;h2 id=&quot;post-escape-if-left_control-is-pressed-alone&quot;&gt;Post escape if left_control is pressed alone&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ke-complex-modifications.pqrs.org/#control&quot;&gt;Change control key&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ctrlキーを単独で押したときにECSが入力されます。&lt;/p&gt;
+&lt;p&gt;自身がvimmerであり、vim以外のエディタにもvimキーバインドを設定しているので、ECSをよく押すのですが、
+指を動かす距離が減って楽になりました。&lt;/p&gt;
+&lt;p&gt;vimでECSを &lt;code class=&quot;language-text&quot;&gt;jj&lt;/code&gt; や &lt;code class=&quot;language-text&quot;&gt;C-[&lt;/code&gt; などにバインドしている人や、vimmer以外には恩恵を感じにくいかもしれません。&lt;/p&gt;
+&lt;h2 id=&quot;quit-application-by-holding-command-q&quot;&gt;Quit application by holding command-q&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ke-complex-modifications.pqrs.org/#command_q&quot;&gt;Prevent unintended command-q (rev 2)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cmd+q を長押しでアプリケーションを終了するようになります。&lt;/p&gt;
+&lt;p&gt;タブを閉じようとしてしょっちゅう &lt;code class=&quot;language-text&quot;&gt;Cmd+w&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;Cmd+q&lt;/code&gt; を打ち間違えるため導入しました。&lt;/p&gt;
+&lt;h2 id=&quot;コマンドキーを単体で押したときに英数かなキーを送信する左コマンドキーは英数右コマンドキーはかな&quot;&gt;コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ke-complex-modifications.pqrs.org/#japanese&quot;&gt;For Japanese （日本語環境向けの設定）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;記号の配置の好みや、リターンキーの押しやすさからUS配列を使用しています。
+US配列のキーボードでは、英数やかなのキーがなく、日本語切り替えは &lt;code class=&quot;language-text&quot;&gt;Cmd+Space&lt;/code&gt; や &lt;code class=&quot;language-text&quot;&gt;Ctrl+Space&lt;/code&gt; で行います。&lt;/p&gt;
+&lt;p&gt;切り替えの場合、現在の入力状態を把握している必要があるので、できればJIS配列と同じように単一のキーを押すと必ず英数/ローマ字入力に変わってほしいところです。&lt;/p&gt;
+&lt;p&gt;この設定を行うと、左Commandが英数キー、右Commandがかなキーに割り当てられます。
+Commandのmodifierとしての機能は維持され、コピーやペーストなどのショートカットも利用できます。&lt;/p&gt;
+&lt;h2 id=&quot;vonngcapslock&quot;&gt;Vonng/Capslock&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Vonng/Capslock&quot;&gt;https://github.com/Vonng/Capslock&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CapsLockキーを、いろいろなことができるmodifierに変化させる設定です。
+&lt;em&gt;Make CapsLock Great Again!&lt;/em&gt; と銘打つだけあって、アプリ起動のホットキーを作ったり、矢印キーでマウスカーソルを移動させたりといったことができるようになります。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;karabiner://karabiner/assets/complex_modifications/import?url=https://vonng.com/capslock.json&quot;&gt;こちら&lt;/a&gt; からインストールできます。&lt;/p&gt;
+&lt;h3 id=&quot;application&quot;&gt;Application&lt;/h3&gt;
+&lt;p&gt;アプリケーション起動のホットキーを登録できます。
+例: &lt;code class=&quot;language-text&quot;&gt;CapsLock+e&lt;/code&gt; でSafariが起動する(起動済みだったらウィンドウが切り替わる)&lt;/p&gt;
+&lt;p&gt;Cmd+Tabでアプリを切り替えたり、Mission ControlやDockで探したりといった手間がなくなります。&lt;/p&gt;
+&lt;p&gt;私はkarabinerの設定ファイル(&lt;code class=&quot;language-text&quot;&gt;~/.config/karabiner/karabiner.json&lt;/code&gt;) を書き換えて、よく使うアプリを左手のキーに登録しています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;CapsLock+s&lt;/code&gt;: Slack&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;CapsLock+g&lt;/code&gt;: Chrome&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;CapsLock+v&lt;/code&gt;: Visual Studio Code&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;CapsLock+f&lt;/code&gt;: iTerm2&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;CapsLock+Cmd+f&lt;/code&gt;: Finder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;functional&quot;&gt;Functional&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;CapsLock+数字列&lt;/code&gt; をFunctionキーにします。
+Functionキーのないキーボードを使っている場合に便利です。&lt;/p&gt;
+&lt;h3 id=&quot;navigation&quot;&gt;Navigation&lt;/h3&gt;
+&lt;p&gt;Vimスタイルの移動が可能になります。どんな場所でも &lt;code class=&quot;language-text&quot;&gt;hjkl&lt;/code&gt; で移動できるようになります。
+ほかにも &lt;code class=&quot;language-text&quot;&gt;u&lt;/code&gt; が &lt;code class=&quot;language-text&quot;&gt;PgUp&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; が &lt;code class=&quot;language-text&quot;&gt;Home&lt;/code&gt; になったり、
+&lt;code class=&quot;language-text&quot;&gt;CapsLock+Opt+hjkl&lt;/code&gt; がマウスカーソル移動になったりします。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[zplugをzinitに移行する]]></title><description><![CDATA[移行理由 自分がターミナルで使用しているシェルの変遷 2016 ~ 2020/04 zsh zplug 2020/04 ~ 2021/04 fishに移行した 2021/04 ~ zshに戻った zsh…]]></description><link>https://ikorihn-blog.netlify.app/2021/06/zplug-to-zinit/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/06/zplug-to-zinit/</guid><pubDate>Mon, 21 Jun 2021 10:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;toc&quot;&gt;&lt;pre class=&quot;language-toc&quot;&gt;&lt;code class=&quot;language-toc&quot;&gt;# This code block gets replaced with the TOC&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;移行理由&quot;&gt;移行理由&lt;/h2&gt;
+&lt;p&gt;自分がターミナルで使用しているシェルの変遷&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2016 ~ 2020/04 zsh zplug&lt;/li&gt;
+&lt;li&gt;2020/04 ~ 2021/04 fishに移行した&lt;/li&gt;
+&lt;li&gt;2021/04 ~ zshに戻った&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;zshのカスタマイズが面倒なのと、シェルの起動が遅かったので、カスタマイズが簡単なfishに移行したが、以下の理由でまたzshに戻ってきた&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fishはPOSIX非互換なのでコマンドを調べるのが手間&lt;/li&gt;
+&lt;li&gt;bash/zshで作ったスクリプトを書き換える必要がある&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;zinitは起動が早いと聞いたので、zplugからzinitに移行する&lt;/p&gt;
+&lt;h2 id=&quot;インストール&quot;&gt;インストール&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/zdharma/zinit#automatic-installation-recommended&quot;&gt;公式の推奨手順&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt; -c &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.zinit&lt;/code&gt; (&lt;code class=&quot;language-text&quot;&gt;$ZDOTDIR&lt;/code&gt; が設定されていれば &lt;code class=&quot;language-text&quot;&gt;$ZDOTDIR/.zinit&lt;/code&gt;) にインストールされる。
+また、 &lt;code class=&quot;language-text&quot;&gt;~/.zshrc&lt;/code&gt; にzinitの設定が追記されるので、リロードし、Zinitをコンパイルする。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;source&lt;/span&gt; ~/.zshrc
+zinit self-update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;プラグインの設定&quot;&gt;プラグインの設定&lt;/h2&gt;
+&lt;p&gt;完全な例&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;### Added by Zinit&apos;s installer&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; -f &lt;span class=&quot;token variable&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zinit/bin/zinit.zsh &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+    print -P &lt;span class=&quot;token string&quot;&gt;&quot;%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f&quot;&lt;/span&gt;
+    &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; -p &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token environment constant&quot;&gt;$HOME&lt;/span&gt;/.zsh/.zinit&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;chmod&lt;/span&gt; g-rwX &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token environment constant&quot;&gt;$HOME&lt;/span&gt;/.zsh/.zinit&quot;&lt;/span&gt;
+    &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone https://github.com/zdharma/zinit &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token environment constant&quot;&gt;$HOME&lt;/span&gt;/.zsh/.zinit/bin&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+        print -P &lt;span class=&quot;token string&quot;&gt;&quot;%F{33}▓▒░ %F{34}Installation successful.%f%b&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+        print -P &lt;span class=&quot;token string&quot;&gt;&quot;%F{160}▓▒░ The clone has failed.%f%b&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+
+&lt;span class=&quot;token builtin class-name&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zinit/bin/zinit.zsh&quot;&lt;/span&gt;
+autoload -Uz _zinit
+&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;((&lt;/span&gt; ${&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;_comps} &lt;span class=&quot;token punctuation&quot;&gt;))&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; _comps&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;zinit&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;_zinit
+
+&lt;span class=&quot;token comment&quot;&gt;# Load a few important annexes, without Turbo&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# (this is currently required for annexes)&lt;/span&gt;
+zinit light-mode &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    zinit-zsh/z-a-rust &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    zinit-zsh/z-a-as-monitor &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    zinit-zsh/z-a-patch-dl &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    zinit-zsh/z-a-bin-gem-node
+
+&lt;span class=&quot;token comment&quot;&gt;### End of Zinit&apos;s installer chunk&lt;/span&gt;
+
+zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zinit light &lt;span class=&quot;token string&quot;&gt;&quot;zdharma/fast-syntax-highlighting&quot;&lt;/span&gt;
+zinit light &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-autosuggestions&quot;&lt;/span&gt;
+zinit light &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-completions&quot;&lt;/span&gt;
+zinit light &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-history-substring-search&quot;&lt;/span&gt;
+bindkey &lt;span class=&quot;token string&quot;&gt;&apos;^[[A&apos;&lt;/span&gt; history-substring-search-up
+bindkey &lt;span class=&quot;token string&quot;&gt;&apos;^[[B&apos;&lt;/span&gt; history-substring-search-down
+
+zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid pick&lt;span class=&quot;token string&quot;&gt;&apos;init.sh&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zinit light &lt;span class=&quot;token string&quot;&gt;&quot;b4b4r07/enhancd&quot;&lt;/span&gt;
+zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zinit light &lt;span class=&quot;token string&quot;&gt;&quot;reegnz/jq-zsh-plugin&quot;&lt;/span&gt;
+
+zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zinit light &lt;span class=&quot;token string&quot;&gt;&quot;b4b4r07/emoji-cli&quot;&lt;/span&gt;
+zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zinit light &lt;span class=&quot;token string&quot;&gt;&quot;mollifier/cd-gitroot&quot;&lt;/span&gt;
+zinit light &lt;span class=&quot;token string&quot;&gt;&quot;Aloxaf/fzf-tab&quot;&lt;/span&gt;
+
+zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zinit light &lt;span class=&quot;token string&quot;&gt;&quot;lukechilds/zsh-better-npm-completion&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#######&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# https://github.com/Aloxaf/fzf-tab&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#######&lt;/span&gt;
+enable-fzf-tab
+&lt;span class=&quot;token comment&quot;&gt;# zstyle &apos;:fzf-tab:*&apos; fzf-command ftb-tmux-popup&lt;/span&gt;
+zstyle &lt;span class=&quot;token string&quot;&gt;&apos;:fzf-tab:complete:cd:*&apos;&lt;/span&gt; fzf-preview &lt;span class=&quot;token string&quot;&gt;&apos;exa -1 --color=always $realpath&apos;&lt;/span&gt;
+zstyle &lt;span class=&quot;token string&quot;&gt;&apos;:fzf-tab:*&apos;&lt;/span&gt; fzf-bindings &lt;span class=&quot;token string&quot;&gt;&apos;ctrl-j:accept&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ctrl-a:toggle-all&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ctrl-space:toggle+down&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# disable sort when completing `git checkout`&lt;/span&gt;
+zstyle &lt;span class=&quot;token string&quot;&gt;&apos;:completion:*:git-checkout:*&apos;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# set descriptions format to enable group support&lt;/span&gt;
+zstyle &lt;span class=&quot;token string&quot;&gt;&apos;:completion:*:descriptions&apos;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;format&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;[%d]&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# set list-colors to enable filename colorizing&lt;/span&gt;
+zstyle &lt;span class=&quot;token string&quot;&gt;&apos;:completion:*&apos;&lt;/span&gt; list-colors &lt;span class=&quot;token variable&quot;&gt;${(s.&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;.)LS_COLORS}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# preview directory&apos;s content with exa when completing cd&lt;/span&gt;
+zstyle &lt;span class=&quot;token string&quot;&gt;&apos;:fzf-tab:complete:cd:*&apos;&lt;/span&gt; fzf-preview &lt;span class=&quot;token string&quot;&gt;&apos;exa -1 --color=always $realpath&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# switch group using `,` and `.`&lt;/span&gt;
+zstyle &lt;span class=&quot;token string&quot;&gt;&apos;:fzf-tab:*&apos;&lt;/span&gt; switch-group &lt;span class=&quot;token string&quot;&gt;&apos;,&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;.&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;End of Zinit&apos;s installer chunk&lt;/code&gt; までは、インストーラが追記した部分。&lt;/p&gt;
+&lt;h3 id=&quot;プラグインのダウンロード有効化&quot;&gt;プラグインのダウンロード、有効化&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid
+zinit light &lt;span class=&quot;token string&quot;&gt;&quot;zdharma/fast-syntax-highlighting&quot;&lt;/span&gt;
+
+zinit load &lt;span class=&quot;token string&quot;&gt;&quot;zdharma/history-search-multi-word&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;zinitには2つのプラグインロード方法がある&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;zinit load&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;トラッキング機能を有効にする。zinit report で一覧表示ができたり、zinit unload でプラグインを無効化できるなどの利点があるが、ロードは遅くなる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;zinit light&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;トラッキング機能が無効になる。一覧等の機能が使えない代わりに高速&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;めったにトラッキング機能を使わないため、基本的に &lt;code class=&quot;language-text&quot;&gt;zinit light&lt;/code&gt; でロードすることにした&lt;/p&gt;
+&lt;h3 id=&quot;zinit-ice&quot;&gt;zinit ice&lt;/h3&gt;
+&lt;p&gt;後続の &lt;code class=&quot;language-text&quot;&gt;zinit load&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;zinit light&lt;/code&gt; の挙動を制御する&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;zinit ice &lt;span class=&quot;token function&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt; lucid pick&lt;span class=&quot;token string&quot;&gt;&apos;init.sh&apos;&lt;/span&gt;
+zinit light &lt;span class=&quot;token string&quot;&gt;&quot;b4b4r07/enhancd&quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# zinit ice wait&apos;1&apos; lucid pick&apos;init.sh&apos;; zinit light &quot;b4b4r07/enhancd&quot; と同義&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;wait
+&lt;ul&gt;
+&lt;li&gt;zshが起動したあとにプラグインを遅延ロードする秒数を指定する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;lucid
+&lt;ul&gt;
+&lt;li&gt;遅延ロードしたときに、コンソールにロード情報が出力されるのを抑制する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;pick
+&lt;ul&gt;
+&lt;li&gt;sourceするファイルを指定する。pluginが &lt;code class=&quot;language-text&quot;&gt;*.plugin.zsh&lt;/code&gt; ファイルを起点にしていない場合、明示的に指定する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;結果&quot;&gt;結果&lt;/h2&gt;
+&lt;p&gt;2秒くらいかかっていた起動時間が0.6秒前後くらいになった。
+また、zplugだと複数シェルを同時に起動すると競合して状態がおかしくるのか、同じプラグインが複数回ロードされることがまれにあったが、
+こういった問題も起こらなくなった。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[fishのhistoryをzshに移行する]]></title><description><![CDATA[一年くらいfishを使っていたが、文法があまりにbash/zshと異なり辛いため、zshに戻すことにした。
+コマンド履歴に頼る人間なので、直近1年の履歴がなくなってしまうのは困る。
+そこでfishのhistoryファイルをzshのhistory…]]></description><link>https://ikorihn-blog.netlify.app/2021/06/fish-history-to-zsh-history/</link><guid isPermaLink="false">https://ikorihn-blog.netlify.app/2021/06/fish-history-to-zsh-history/</guid><pubDate>Tue, 08 Jun 2021 10:00:00 GMT</pubDate><content:encoded>&lt;p&gt;一年くらいfishを使っていたが、文法があまりにbash/zshと異なり辛いため、zshに戻すことにした。
+コマンド履歴に頼る人間なので、直近1年の履歴がなくなってしまうのは困る。
+そこでfishのhistoryファイルをzshのhistoryファイルに移行することにした。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;toc&quot;&gt;&lt;pre class=&quot;language-toc&quot;&gt;&lt;code class=&quot;language-toc&quot;&gt;# This code block gets replaced with the TOC&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;移行ツール&quot;&gt;移行ツール&lt;/h2&gt;
+&lt;p&gt;移行するためのツールを作った。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/r57ty7/zhistconv&quot;&gt;https://github.com/r57ty7/zhistconv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使い方&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# fish_hisoryをzsh_historyに変換して追記(事前にバックアップを取ることを推奨)&lt;/span&gt;
+$ zhistconv fish fish_hist &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; ~/.zsh_history
+$ &lt;span class=&quot;token function&quot;&gt;history&lt;/span&gt; -E &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; 結合されたhistoryが表示される&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;以下詳細&lt;/p&gt;
+&lt;h2 id=&quot;fishのhistoryファイルをzshのhistoryファイルの形式に変換する&quot;&gt;fishのhistoryファイルをzshのhistoryファイルの形式に変換する&lt;/h2&gt;
+&lt;h3 id=&quot;fishのhistoryファイル&quot;&gt;fishのhistoryファイル&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.local/share/fish/fish_history&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;cmd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; echo hello
+  &lt;span class=&quot;token key atrule&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1621067042&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;cmd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git pull
+  &lt;span class=&quot;token key atrule&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1621067359&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;yaml形式で保存されているので、yamlをロードして変換してあげればいい&lt;/p&gt;
+&lt;h3 id=&quot;zshのhistoryファイル&quot;&gt;zshのhistoryファイル&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.zsh_history&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;txt&quot;&gt;&lt;pre class=&quot;language-txt&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;: 1621066935:0;echo hello
+: 1621066935:0;cd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;: &amp;lt;unix timestamp&gt;:0:&amp;lt;command&gt;&lt;/code&gt; 形式(真ん中の0が何を意味しているかは調べてない)&lt;/p&gt;
+&lt;h2 id=&quot;zshのマルチバイト文字の扱いについて&quot;&gt;zshのマルチバイト文字の扱いについて&lt;/h2&gt;
+&lt;p&gt;一つ問題があった。移行ツールをわざわざ作ったのはほとんどこの仕様のため&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.zsh_history&lt;/code&gt; をUTF-8で開くと、日本語が文字化けしていた。
+historyコマンドの結果は文字化けしていない。&lt;/p&gt;
+&lt;p&gt;どうやらマルチバイト文字が特殊な扱いをされているらしい。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://syossan.hateblo.jp/entry/2017/10/09/181928&quot;&gt;.zsh_historyにおける非ASCII文字の扱いについて - 生涯未熟&lt;/a&gt;
+&lt;a href=&quot;https://github.com/dvorka/hstr/pull/416&quot;&gt;unmetafy unicode when zsh by rogerdehe · Pull Request #416 · dvorka/hstr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;metafy/unmetafyという処理をしているらしく、
+メタなバイトがあったら直前に &lt;code class=&quot;language-text&quot;&gt;0x83&lt;/code&gt; を挿入して、&lt;code class=&quot;language-text&quot;&gt;0x20&lt;/code&gt;とのxorを取り6bit目を反転させているようだ。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/zsh-users/zsh/blob/master/Src/utils.c#L4921-L4933&quot;&gt;https://github.com/zsh-users/zsh/blob/master/Src/utils.c#L4921-L4933&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;mod_export &lt;span class=&quot;token keyword&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;unmetafy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;len&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;p&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;t&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;p &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;p &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;p &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; Meta&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; p&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;t &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; p&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;t &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;p&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;t&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; Meta &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;p&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	    t&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;p&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;len&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;len &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; t &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;単純にfish_historyを変換してzsh_historyに貼り付けるだけでは、日本語部分が文字化けしてしまう。&lt;/p&gt;
+&lt;h3 id=&quot;文字化けしたzsh_historyファイルを読めるようにする&quot;&gt;文字化けしたzsh_historyファイルを読めるようにする&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;ぁあぃいぅうぜそぞただちぢっつづ&lt;/code&gt; という文字列を使って調べていく。
+これらは頭2バイトが &lt;code class=&quot;language-text&quot;&gt;e381&lt;/code&gt;、末尾1バイトがそれぞれいかのようになる。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ぁ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;81&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;あ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;82&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ぃ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;83&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;い&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;84&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ぅ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;85&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;う&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;86&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ぜ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;9c&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;そ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;9d&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ぞ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;9e&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;た&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;9f&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;だ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;a0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ち&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;a1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ぢ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;a2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;っ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;a3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;つ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;a4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;づ&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;a5&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;zsh_historyで見ると以下のようなバイト列になっている(わかりやすいよう適宜スペースを入れている)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;txt&quot;&gt;&lt;pre class=&quot;language-txt&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;E38181 E38182 E38183A3 E38183A4 E38183A5 E38183A6 E38183BC E38183BD E38183BE E38183BF E3818380 E3818381 E3818382 E381A3 E381A4 E381A5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;zsh_historyの文字コードはlatin1なのでほぼUTF-8と同じ。
+文字コード表をもとに当てはまる文字に戻すと、 &lt;code class=&quot;language-text&quot;&gt;0x83-0xA2&lt;/code&gt; のとき、直前に &lt;code class=&quot;language-text&quot;&gt;0x83&lt;/code&gt; を入れてから6bit目を反転させていることがわかる。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;txt&quot;&gt;&lt;pre class=&quot;language-txt&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;E38181 E38182 E38183A3 E38183A4 E38183A5 E38183A6 E38183BC E38183BD E38183BE E38183BF E3818380 E3818381 E3818382 E381A3 E381A4 E381A5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;0x83&lt;/code&gt; を消して、直後の6bit目を反転させると以下のようになる&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;txt&quot;&gt;&lt;pre class=&quot;language-txt&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;E38181 E38182 E38183 E38184 E38185 E38186 E3819C E3819D E3819E E3819F E381A0 E381A1 E381A2 E381A3 E381A4 E381A5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;これがもとの文字列のバイト列に一致する。&lt;/p&gt;
+&lt;p&gt;マルチバイト文字をzsh_historyの形式に変換するには上と逆のことをすればいい。
+つまり、&lt;code class=&quot;language-text&quot;&gt;0x83-0xA2&lt;/code&gt; のとき、直前に &lt;code class=&quot;language-text&quot;&gt;0x83&lt;/code&gt; を入れてから6bit目を反転させる。&lt;/p&gt;
+&lt;h3 id=&quot;goでzsh_historyをパースするプログラムを書いてみる&quot;&gt;Goでzsh_historyをパースするプログラムを書いてみる&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; zhistconv
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;// zsh_historyの仕様で、各バイトが0x83~0xA2のとき、その前に0x83を入れて6bit目を反転させる&lt;/span&gt;
+	x83 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;131&lt;/span&gt;
+	xA2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;162&lt;/span&gt;
+	x20 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;32&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ParseZshHistory&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;latin1Byte &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	isMarking &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; byteBuffer &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;byte&lt;/span&gt;
+
+	&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; codePoint &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;range&lt;/span&gt; latin1Byte &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; codePoint &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; x83 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			isMarking &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;continue&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; isMarking &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token comment&quot;&gt;// 6bit目を反転させるために0x20をXORする&lt;/span&gt;
+			invertCodePoint &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; codePoint &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt; x20
+			byteBuffer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;byteBuffer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; invertCodePoint&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			isMarking &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			byteBuffer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;byteBuffer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; codePoint&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; byteBuffer
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ConvertToZshHistory&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;latin1Byte &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; byteBuffer &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;byte&lt;/span&gt;
+
+	&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; codePoint &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;range&lt;/span&gt; latin1Byte &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token comment&quot;&gt;// 131は0metacharの10進数表現&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; x83 &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; codePoint &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; codePoint &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; xA2 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token comment&quot;&gt;// 6bit目を反転させるために0x20をXORする&lt;/span&gt;
+			invertCodePoint &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; codePoint &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt; x20
+			byteBuffer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;byteBuffer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x83&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			byteBuffer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;byteBuffer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; invertCodePoint&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			byteBuffer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;byteBuffer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; codePoint&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; byteBuffer
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;作ったツールについて&quot;&gt;作ったツールについて&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/urfave/cli&quot;&gt;urfave/cli: A simple, fast, and fun package for building command line apps in Go&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;こちらを使ってcliツールを作った。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;zhistconv fish&lt;/code&gt;: fish_historyをzsh_historyの形式に変換して標準出力する&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;zhistconv parse&lt;/code&gt;: zsh_historyをUTF-8に変換する&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;zhistconv reverse&lt;/code&gt;: UTF-8で書かれたzsh_historyのマルチバイト文字をzsh_historyの仕様に変換する&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
